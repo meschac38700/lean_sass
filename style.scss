@@ -1,16 +1,27 @@
 // mes variables
-$p_color: red;
-$width: 100px;
-$bg_p: skyblue;
-$hex: #333333;
+$height: 600px;
+$width: 800px;
+$color: black;
+$padding: 10px;
 
-// code css
-p{
-	color: $p_color;
-	background-color: $bg_p;
+// Border radius pour tous les navigateurs
+// c'est une fonction!  ca evite de se répeter dans le code 
+@mixin border-radius($radius)
+{
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;	
+	-o-border-radius: $radius;	
+	border-radius: $radius;	
 }
+
 .test{
+	height: $height;
 	width: $width;
-	height: $width;
-	background-color: $hex;
+	padding: $padding;
+	background-color: skyblue;
+	// appliquation du border radius
+	@include border-radius(20px);
+	p{
+		color: $color;
+	}
 }
