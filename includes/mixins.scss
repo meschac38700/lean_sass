@@ -1,0 +1,9 @@
+// Border radius pour tous les navigateurs
+// c'est une fonction!  ca evite de se répeter dans le code 
+@mixin border-radius($radius)
+{
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;	
+	-o-border-radius: $radius;	
+	border-radius: $radius;	
+}

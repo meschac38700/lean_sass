@@ -1,18 +1,6 @@
-// mes variables
-$height: 600px;
-$width: 800px;
-$color: black;
-$padding: 10px;
-
-// Border radius pour tous les navigateurs
-// c'est une fonction!  ca evite de se répeter dans le code 
-@mixin border-radius($radius)
-{
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;	
-	-o-border-radius: $radius;	
-	border-radius: $radius;	
-}
+// imports
+@import "includes/mixins.scss";
+@import "includes/variables.scss";
 
 .test{
 	height: $height;
