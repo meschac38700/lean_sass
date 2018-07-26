@@ -2,14 +2,21 @@
 @import "includes/mixins.scss";
 @import "includes/variables.scss";
 
-.test{
-	height: $height;
-	width: $width;
-	padding: $padding;
-	background-color: skyblue;
-	// appliquation du border radius
-	@include border-radius(20px);
-	p{
-		color: $color;
-	}
+// class mere
+.message
+{
+	height: 50px;
+	width: 100%
+}
+
+.error
+{   // heritage
+	@extends .message;
+	background-color: red;
+}
+
+.success
+{	// heritage
+	@extends .message;
+	background-color: green;
 }

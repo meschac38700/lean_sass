@@ -1,13 +1,13 @@
-.test {
-  height: 600px;
-  width: 800px;
-  padding: 10px;
-  background-color: skyblue;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px; }
-  .test p {
-    color: black; }
+.message {
+  height: 50px;
+  width: 100%; }
+
+.error {
+  @extends .message;
+  background-color: red; }
+
+.success {
+  @extends .message;
+  background-color: green; }
 
 /*# sourceMappingURL=style.css.map */
