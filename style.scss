@@ -1,0 +1,16 @@
+// mes variables
+$p_color: red;
+$width: 100px;
+$bg_p: skyblue;
+$hex: #333333;
+
+// code css
+p{
+	color: $p_color;
+	background-color: $bg_p;
+}
+.test{
+	width: $width;
+	height: $width;
+	background-color: $hex;
+}
